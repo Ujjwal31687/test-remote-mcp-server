@@ -127,6 +127,8 @@ def categories():
         return f'{{"error": "Could not load categories: {str(e)}"}}'
 
 # Start the server
-if __name__ == "__main__":
+def start():
     mcp.run(transport="http", host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    start()
     # mcp.run()
